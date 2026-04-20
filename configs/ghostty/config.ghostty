@@ -1,0 +1,53 @@
+######################### unbinds
+# unbind goto_split defaults
+keybind = ctrl+alt+arrow_up=unbind
+keybind = ctrl+alt+arrow_down=unbind
+keybind = ctrl+alt+arrow_left=unbind
+keybind = ctrl+alt+arrow_right=unbind
+
+# unbind resize_split defaults
+keybind = super+ctrl+shift+arrow_up=unbind
+keybind = super+ctrl+shift+arrow_down=unbind
+keybind = super+ctrl+shift+arrow_left=unbind
+keybind = super+ctrl+shift+arrow_right=unbind
+
+# unbind adjust_selection defaults
+keybind = shift+arrow_up=unbind
+keybind = shift+arrow_down=unbind
+keybind = shift+arrow_left=unbind
+keybind = shift+arrow_right=unbind
+
+######################### end unbinds
+
+# theme and colors
+theme = Lab Fox
+font-family = Ubuntu Mono Regular
+split-divider-color=#CACACA
+
+# window
+unfocused-split-fill=#CACACA
+unfocused-split-opacity=0.80
+
+# tabs
+keybind = ctrl+shift+t=new_tab
+keybind = ctrl+alt+l=next_tab
+keybind = ctrl+alt+h=previous_tab
+
+# navigating splits
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+j=goto_split:up
+keybind = ctrl+shift+k=goto_split:down
+keybind = ctrl+shift+l=goto_split:right
+
+# new splits
+keybind = ctrl+shift+e=new_split:right
+keybind = ctrl+shift+o=new_split:down
+
+# resizing splits
+keybind = ctrl+shift+arrow_down=resize_split:down,25
+keybind = ctrl+shift+arrow_left=resize_split:left,25
+keybind = ctrl+shift+arrow_right=resize_split:right,25
+keybind = ctrl+shift+arrow_up=resize_split:up,25
+
+# links and urls
+link-url = true
