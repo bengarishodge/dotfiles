@@ -16,6 +16,14 @@ formatter = { command = 'prettier' }
 auto-format = true
 
 [[language]]
+name = "svelte"
+language-servers = [ "svelteserver" ]
+auto-format = true
+
+[language-server.svelteserver]
+command = "svelteserver"
+
+[[language]]
 name = "typescript"
 auto-format = true
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
@@ -35,3 +43,16 @@ autoformat = true
 config = { check = { command = "clippy" } }
 command = "rust-analyzer"
 
+[[language]]
+name = "markdown"
+language-servers = [ "marksman" ]
+
+[language-server.marksman]
+name = "marksman"
+autoformat = true
+command = "marksman-linux-x64"
+
+[[language]]
+name = "markdown"
+formatter = { command = "npx", args = ["prettier", "--parser", "markdown"] }
+auto-format = true

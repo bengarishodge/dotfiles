@@ -23,6 +23,8 @@ separator = "│"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
+diagnostics = ["warning", "error"]
+workspace-diagnostics = ["warning", "error"]
 
 [editor.indent-guides]
 render = true
